@@ -1,0 +1,25 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.image-photo{
+  background-image: url('../assets/ricecreek.jpeg');
+
+}
+
+.nav-text{
+  font-size: 21px;
+  color: white;
+}
+.nav-margin {
+  margin: 0 2% 0 2%;
+}
+.bgimg {
+  height: 600px;
+  position: fixed;
+  top:0;
+  left:0;
+  background-image: url('../assets/ricecreek.jpeg');
+}
+.on-scroll-nav {
+  background: black;
+  opacity: 0.5;
+}
