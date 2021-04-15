@@ -13,6 +13,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MatCardModule } from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DragScrollModule } from 'ngx-drag-scroll';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 
 import { CardComponent } from './components/card/card.component';
@@ -48,7 +49,8 @@ const routes: Routes = [
     MDBBootstrapModule.forRoot(),
     MatCardModule,
     MatGridListModule,
-    DragScrollModule
+    DragScrollModule,
+    GoogleMapsModule
   ],
   exports: [RouterModule],
   providers: [],
