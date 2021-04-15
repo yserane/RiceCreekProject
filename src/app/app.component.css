@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .image-photo{
-  background-image: url('../assets/ricecreek.jpeg');
+  background-image: url('../assets/ricecreek.png');
 
 }
 
@@ -17,7 +17,7 @@
   position: fixed;
   top:0;
   left:0;
-  background-image: url('../assets/ricecreek.jpeg');
+  background-image: url('../assets/ricecreek.png');
 }
 .on-scroll-nav {
   background: black;
