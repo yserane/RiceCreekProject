@@ -2,16 +2,15 @@
 <script src="js/lib/angular-animate.js"></script>
 
 <div>
-  <img class ="main-img-container" src="../../assets/ricecreek.png" alt="">
-  <img src="">
-  <span @textAnimation class="fade text-image">Rice Creek Field<br>Virtual Art Gallery</span>
-  <span class="text-image-below"> Explore the works of SUNY Oswego Students using the interactive trail map <br>
+  <iframe class ="main-img-container" allowfullscreen="true"
+          src="https://momento360.com/e/u/51e061356d06498386e1550bf1da0743?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"> </iframe>
+
+  <span @textAnimation class="fade text-image">Rice Creek<br>Virtual Art Gallery</span>
+  <span class="text-image-below"> Explore the works of SUNY Oswego Students using the interactive trail map. <br>
    Learn about the birds and animals depicted in the artworks of John Weeks and Diana Sweatt through our virtual gallery. <br>
     And enjoy the photographs of Rice Creek depicting the beauty of early spring!
 </span>
 
-<!--  <iframe height="350px" width="100%" allowfullscreen="true"-->
-<!--          src="https://momento360.com/e/u/caeca55ef26d4f8d92b3877791fece1a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"> </iframe>-->
   <div class="content" (click)="onScroll('second-component')">
     <svg id="more-arrows">
       <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
@@ -35,7 +34,8 @@
           <area   style="cursor: pointer" (click)="onScroll('virtual-walk')" style="cursor: pointer" coords="289,501,364,565" shape="rect">
         </map>
 
-      <div class ="beside-img-container" [hidden]="showImageTextConainter"> Explore the SUNY Oswego students artwork in the 1980’s stored by the Rice Creek Field Station. Although the artists’ names are not known, their work reflects the beauty found at Rice Creek - from depictions of quiet forest scenes, to studies of wildflowers and kingfishers.
+      <div class ="beside-img-container" [hidden]="showImageTextConainter"> Explore the artwork of SUNY Oswego students
+        from the 1980’s stored by the Rice Station. Although the artists’ names are not known, their work reflects the beauty found at Rice Creek - from depictions of quiet forest scenes, to studies of wildflowers and kingfishers.
         Click on <img src="assets/icon.png" width="29"> to see some more </div>
       <app-card class="card beside-img-container-card" [hidden]="!showImageTextConainter" [card]="imageMapModel"></app-card>
 
@@ -50,7 +50,7 @@
 
   </div>
   <div>
-    <div class="trail-text">These photographs were taken on the Green Trail of Rice Creek and by the Rice Creek Field Station and depict the growth found during early spring.</div>
+    <div class="trail-text">These photographs were taken on the Green Trail of Rice Creek and depict the growth found during early spring.</div>
     <i class= "arrow-style move-right" (click)="moveLeft()">&#5171;</i>
     <i class = "arrow-style move-left"  (click)="moveRight()">&#5171;</i>
 
@@ -61,14 +61,14 @@
   </div>
 
   <div style="display: flex; flex-wrap: wrap; margin: 5%; color: white;background: #557957;">
-    <div class = "side-container" style="width: 50%;">
-    <div class="font-style"> Contact: </div>
+    <div class = "side-container" style="width: 75%;">
+    <div class="font-style"> For more information - contact the official Rice Creek Field Station: </div>
     <div class="font-style-smaller">Phone number: <span>315-312-6677</span></div>
       <div class="font-style-smaller "> Directons <button class="button-styling" (click)="naviagateToUrl()"> <img class= "google-img" src="https://img.icons8.com/doodle/48/000000/google-maps-new.png"/>Google Maps</button></div>
-      <div class="font-style-smaller"> Visit <a style= "margin-left: 1%" target="_blank" href="https://www.oswego.edu/rice-creek/home"> SUNY Oswego Rice creek</a></div>
+      <div class="font-style-smaller"> Visit the official website: <a style= "margin-left: 1%" target="_blank" href="https://www.oswego.edu/rice-creek/home"> SUNY Oswego Rice creek</a></div>
     </div>
     <div class="main-container">
-      <img style="width: 80%;" src="./assets/circle-cropped.png">
+      <img style="width: 80%;" src="./assets/circle-cropp.png">
     </div>
   </div>
 
